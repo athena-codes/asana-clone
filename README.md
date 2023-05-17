@@ -85,14 +85,14 @@ information.
 * Require Authentication: false
 * Request
   * Method: POST
-  * URL: /api/session
+  * URL: /api/login
   * Headers:
     * Content-Type: application/json
   * Body:
 
     ```json
     {
-      "credential": "john.smith@gmail.com",
+      "email": "john.smith@gmail.com",
       "password": "secret password"
     }
     ```
@@ -139,7 +139,7 @@ information.
       "message": "Validation error",
       "statusCode": 400,
       "errors": {
-        "credential": "Email or username is required",
+        "credential": "Email is required",
         "password": "Password is required"
       }
     }
@@ -153,18 +153,17 @@ user's information.
 * Require Authentication: false
 * Request
   * Method: POST
-  * URL: /api/users
+  * URL: /api/signup
   * Headers:
     * Content-Type: application/json
   * Body:
 
     ```json
     {
-      "firstName": "John",
-      "lastName": "Smith",
-      "email": "john.smith@gmail.com",
-      "username": "JohnSmith",
-      "password": "secret password"
+      "firstName": "Jane",
+      "lastName": "Doe",
+      "email": "janedoe@email.com",
+      "password": "password"
     }
     ```
 
@@ -174,16 +173,17 @@ user's information.
     * Content-Type: application/json
   * Body:
 
-    ```json
-    {
-      "id": 1,
-      "firstName": "John",
-      "lastName": "Smith",
-      "email": "john.smith@gmail.com",
-      "username": "JohnSmith",
-      "token": ""
-    }
-    ```
+  ```json
+   {
+  "user": {
+    "id": 1,
+    "username": "JohnSmith",
+    "email": "john.smith@gmail.com",
+    "profile_picture": "<profile_picture_url>",
+    "created_at": "<timestamp>"
+   }
+  }
+   ```
 
 * Error response: User already exists with the specified email
   * Status Code: 403
