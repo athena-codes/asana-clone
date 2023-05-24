@@ -1,0 +1,31 @@
+    USER_TEAM TABLE FUNCTIONALITY:
+
+   - The user_team table serves as a junction or association table to establish the many-to-many relationship between users and teams.
+It allows you to store the membership information for each user-team association.
+    - The table has two foreign key columns:
+           user_id and team_id
+which reference the respective primary keys in the users and teams tables.
+
+    - To query for all members of a specific team, you can utilize a join operation between the users and user_team tables,
+filtering by the desired team. Here's an example query:
+
+SELECT users.*
+FROM users
+JOIN user_team ON users.id = user_team.user_id
+WHERE user_team.team_id = <team_id>
+
+    - This query retrieves all the user records from the users table who are members of the specified team, based on the team_id.
+
+    - To add a new member to a team, you'll need to insert a new record into the user_team table.
+    - This record will define the relationship between a user and a team. Here's an example of how you can do that using SQLAlchemy in Python:
+
+# Assuming you have the user_id and team_id available
+new_member = UserTeam(user_id=<user_id>, team_id=<team_id>)
+db.session.add(new_member)
+db.session.commit()
+
+    - This code creates a new UserTeam object with the appropriate user_id and team_id values and adds it to the SQLAlchemy session.
+Then, by calling commit(), the changes are persisted to the database, effectively adding a new member to the specified team.
+
+    - By using the user_team table as an intermediary, you establish the association between users and teams, allowing you to retrieve team
+members and add new members easily.
