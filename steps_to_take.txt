@@ -5,21 +5,22 @@ Set up a Flask project:
     Activate the virtual environment.
     Install Flask and other required dependencies using pip.
     Create an __init__.py file in the project directory to initialize the Flask application.
-    Set up the Database:
 
-Configure the SQLAlchemy database URI in the Flask application configuration.
-Create a new Python file (e.g., models.py) to define your database models.
-Define Database Models:
 
-Define the necessary models for your application based on the provided database schema.
-Use SQLAlchemy's declarative syntax to define the models as Python classes.
-Specify the relationships between the models using appropriate foreign keys and relationships (e.g., one-to-many, many-to-many).
-Create Database Migration Scripts:
+2. Set up the Database:
+    Configure the SQLAlchemy database URI in the Flask application configuration.
+    Create a new Python file (e.g., models.py) to define your database models.
 
-Install Flask-Migrate to handle database migrations.
-Set up Flask-Migrate to work with your project and database.
-Generate an initial database migration script using Flask-Migrate's command-line interface. This script will create the initial tables based on your models.
-Run Initial Database Migration:
+3. Define Database Models:
+    Define the necessary models for your application based on the provided database schema.
+    Use SQLAlchemy's declarative syntax to define the models as Python classes.
+    Specify the relationships between the models using appropriate foreign keys and relationships (e.g., one-to-many, many-to-many).
+
+4. Create Database Migration Scripts:
+    Install Flask-Migrate to handle database migrations.
+    Set up Flask-Migrate to work with your project and database.
+    Generate an initial database migration script using Flask-Migrate's command-line interface. This script will create the initial tables based on your models.
+    Run Initial Database Migration:
 
 Apply the initial migration to create the database tables by executing the migration script using Flask-Migrate's command-line interface.
 Implement CRUD Operations:
