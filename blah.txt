@@ -1,7 +1,5 @@
 # Asana Clone
 
-
-
 ##  User Authentication and Authorization
 ### All endpoints that require authentication
 
