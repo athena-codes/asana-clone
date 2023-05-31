@@ -11,20 +11,20 @@ Set up a Flask project:
     Configure the SQLAlchemy database URI in the Flask application configuration.
     Create a new Python file (e.g., models.py) to define your database models.
 
-IN PROGRESS ---> 3. Define Database Models:
+✅ 3. Define Database Models:
     Define the necessary models for your application based on the provided database schema.
     Use SQLAlchemy's declarative syntax to define the models as Python classes.
     Specify the relationships between the models using appropriate foreign keys and relationships (e.g., one-to-many, many-to-many).
 
-4. Create Database Migration Scripts:
+✅ 4. Create Database Migration Scripts:
     Install Flask-Migrate to handle database migrations.
     Set up Flask-Migrate to work with your project and database.
     Generate an initial database migration script using Flask-Migrate's command-line interface. This script will create the initial tables based on your models.
 
-5. Run Initial Database Migration:
+✅ 5. Run Initial Database Migration:
     Apply the initial migration to create the database tables by executing the migration script using Flask-Migrate's command-line interface.
 
-6. Implement CRUD Operations:
+ IN PROGRESS --> 6. Implement CRUD Operations:
     Define the necessary methods and routes in your Flask application to perform CRUD (Create, Read, Update, Delete) operations for each of the database models.
     Implement the required logic for handling user registration, authentication, project management, task management, team management, and comments.
 
