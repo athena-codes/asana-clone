@@ -20,32 +20,32 @@ Set up a Flask project:
     Install Flask-Migrate to handle database migrations.
     Set up Flask-Migrate to work with your project and database.
     Generate an initial database migration script using Flask-Migrate's command-line interface. This script will create the initial tables based on your models.
-    Run Initial Database Migration:
 
-Apply the initial migration to create the database tables by executing the migration script using Flask-Migrate's command-line interface.
-Implement CRUD Operations:
+5. Run Initial Database Migration:
+    Apply the initial migration to create the database tables by executing the migration script using Flask-Migrate's command-line interface.
 
-Define the necessary methods and routes in your Flask application to perform CRUD (Create, Read, Update, Delete) operations for each of the database models.
-Implement the required logic for handling user registration, authentication, project management, task management, team management, and comments.
-Implement User Authentication:
+6. Implement CRUD Operations:
+    Define the necessary methods and routes in your Flask application to perform CRUD (Create, Read, Update, Delete) operations for each of the database models.
+    Implement the required logic for handling user registration, authentication, project management, task management, team management, and comments.
 
-Set up Flask-Login to handle user authentication and session management.
-Create login and registration routes to allow users to sign in and sign up.
-Implement the necessary logic to authenticate users, handle session management, and protect routes that require authentication.
-Implement API Endpoints:
+7. Implement User Authentication:
+    Set up Flask-Login to handle user authentication and session management.
+    Create login and registration routes to allow users to sign in and sign up.
+    Implement the necessary logic to authenticate users, handle session management, and protect routes that require authentication.
 
-Define API endpoints using Flask's routing mechanism to expose the functionality of your application to clients.
-Implement the necessary request handlers for each API endpoint to handle incoming requests, perform the required operations on the database, and return appropriate responses.
-Implement Frontend Views (Optional):
+8. Implement API Endpoints:
+    Define API endpoints using Flask's routing mechanism to expose the functionality of your application to clients.
+    Implement the necessary request handlers for each API endpoint to handle incoming requests, perform the required operations on the database, and return appropriate responses.
 
-Set up a frontend framework or templating engine (e.g., React, Vue.js, Jinja2) to build views for your application.
-Implement the necessary views and templates to interact with the backend API endpoints and provide a user-friendly interface for managing projects, tasks, teams, and comments.
-Test and Debug:
+9. Implement Frontend Views (Optional):
+    Set up a frontend framework or templating engine (e.g., React, Vue.js, Jinja2) to build views for your application.
+    Implement the necessary views and templates to interact with the backend API endpoints and provide a user-friendly interface for managing projects, tasks, teams, and comments.
 
-Test your application thoroughly to ensure all features are working correctly.
-Debug any issues that arise during testing and fix them accordingly.
-Deploy Your Application:
+10. Test and Debug:
+    Test your application thoroughly to ensure all features are working correctly.
+    Debug any issues that arise during testing and fix them accordingly.
 
-Choose a hosting platform (e.g., Heroku, AWS, DigitalOcean) and deploy your application.
-Configure the necessary environment variables, database connections, and production settings.
-Monitor your application's performance and address any issues that may arise in the production environment.
+11. Deploy Your Application:
+    Choose a hosting platform (e.g., Heroku, AWS, DigitalOcean) and deploy your application.
+    Configure the necessary environment variables, database connections, and production settings.
+    Monitor your application's performance and address any issues that may arise in the production environment.
