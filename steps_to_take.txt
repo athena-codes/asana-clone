@@ -1,17 +1,17 @@
 Set up a Flask project:
 
-1. Create a new directory for your project.
+✅ 1. Create a new directory for your project.
     Inside the directory, create a virtual environment to isolate project dependencies.
     Activate the virtual environment.
     Install Flask and other required dependencies using pip.
     Create an __init__.py file in the project directory to initialize the Flask application.
 
 
-2. Set up the Database:
+✅ 2. Set up the Database:
     Configure the SQLAlchemy database URI in the Flask application configuration.
     Create a new Python file (e.g., models.py) to define your database models.
 
-3. Define Database Models:
+IN PROGRESS ---> 3. Define Database Models:
     Define the necessary models for your application based on the provided database schema.
     Use SQLAlchemy's declarative syntax to define the models as Python classes.
     Specify the relationships between the models using appropriate foreign keys and relationships (e.g., one-to-many, many-to-many).
