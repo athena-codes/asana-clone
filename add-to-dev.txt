@@ -1,0 +1,11 @@
+LandingPage.css:
+.hero-image {
+    max-width: 500px;
+}
+
+LandingPage/index.js:
+  <img
+              className='hero-image'
+              src={require('../../assets/images/hero-image.png').default}
+              alt='Hero Image'
+            />
