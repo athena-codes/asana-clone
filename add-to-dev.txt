@@ -9,3 +9,11 @@ LandingPage/index.js:
               src={require('../../assets/images/hero-image.png').default}
               alt='Hero Image'
             />
+
+
+.Content {
+    flex: 1;
+    background-color: #1E1F21;
+ statu INDEX.CSS:
+    /* margin-left: 20px; */
+}
